@@ -1,0 +1,9 @@
+apiVersion: landscaper.gardener.cloud/v1alpha1
+kind: DataObject
+metadata:
+  name: introspect-config
+  namespace: payloads
+data: 
+  namespace: app-demo
+  username: root
+  password: some-important-password

@@ -1,0 +1,21 @@
+apiVersion: landscaper.gardener.cloud/v1alpha1
+kind: DataObject
+metadata:
+  name: introspect-config
+  namespace: payloads
+data: 
+  namespace: <<<required>>>
+  username:  <<<required>>>
+  password:  <<<required>>>
+---
+apiVersion: landscaper.gardener.cloud/v1alpha1
+kind: Installation
+metadata:
+  name: app-introspect
+  namespace: payloads
+spec:
+  imports:
+    targets:
+    - name: cluster
+      # the "#" forces the landscaper to use the target with the name in the same namespace
+      target: <<<required>>>
