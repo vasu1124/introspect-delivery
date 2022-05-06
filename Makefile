@@ -60,7 +60,7 @@ content/RELEASENOTES.md: VERSION
 
 .PHONY: push 
 push: ctf
-	ocm transfer ctf gen/ctf "$OCMREPO"
+	ocm transfer ctf gen/ctf "$(OCMREPO)"
 
 .PHONY: gen
 gen:
