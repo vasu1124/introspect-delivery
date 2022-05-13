@@ -6,9 +6,10 @@ metadata:
 spec:
   componentDescriptor:
     ref:
-      repositoryContext:
-        type: ociRegistry
-        baseUrl: ghcr.io/vasu1124/ocm
+#      refers to default of landscaper.gardener.cloud/v1alpha1/Context in same namespace
+#      repositoryContext:
+#        type: ociRegistry
+#        baseUrl: ghcr.io/vasu1124/ocm
       componentName: github.com/vasu1124/app-introspect
       version: 1.0.0
 
