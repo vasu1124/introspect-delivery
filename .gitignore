@@ -1,3 +1,4 @@
 *.sw[pq]
 /local
 /gen
+.cache_ggshield
