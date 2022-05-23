@@ -21,7 +21,7 @@ spec:
     targets:
     - name: cluster
       # the "#" forces the landscaper to use the target with the name in the same namespace
-      target: "#vasu-target1"
+      target: "#default"
     data:
       - name: config
         dataRef: "#introspect-config"
