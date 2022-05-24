@@ -1,3 +1,7 @@
+- **Release 0.0.4**
+
+  added some more infos
+
 - **Release 0.0.3**
 
   added Readme.md
