@@ -1,3 +1,7 @@
+- **Release 0.0.5**
+
+  some more changes
+
 - **Release 0.0.4**
 
   added some more infos
