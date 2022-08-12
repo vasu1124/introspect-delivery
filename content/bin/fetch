@@ -67,7 +67,7 @@ fi
 echo "checking latest version for $productrepo//$productcomp"
 echo ocm "${OCMARGS[@]}" ocm versions show --latest --repo "$productrepo" "$productcomp"
 actual="$(ocm "${OCMARGS[@]}" ocm versions show --latest --repo "$productrepo" "$productcomp")"
-commit="$(ocm "${OCMARGS[@]}" get resource --repo "$productrepo" "$productcomp:$actual" "$insttemp" -o json | jq -r '.items[0].labels[] | select(.name=="commit").value')"
+commit="$(ocm "${OCMARGS[@]}" get resource --repo "$productrepo" "$productcomp:$actual" "$insttemp" -o json | jq -r '.items[0].element.labels[] | select(.name=="commit").value')"
 
 echo "latest version is $actual [$commit]"
 SetOutput productversion "$actual"
